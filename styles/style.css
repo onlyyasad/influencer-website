@@ -1,0 +1,117 @@
+* {
+    margin: 0 auto;
+}
+
+:root {
+    --bg-color: ;
+    --primary-color: #3A3A3A;
+    --secondary-color: ;
+    --star-active: ;
+    --star-inactive: ;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/*-----------------------------------------------------
+Header Area Styles 
+-----------------------------------------------------*/
+.header-container{
+    margin: 87px 120px 72px 120px;
+}
+.mid-large-device-header {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.header-title {
+    font-weight: 700;
+    font-size: 24px;
+    color: var(--primary-color);
+    text-align: left;
+    align-items: center;
+    margin: 0;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    text-align: right;
+    align-items: center;
+    gap: 34px;
+    margin: 0;
+
+}
+
+.menu a,
+.small-device-header a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.small-device-header {
+    display: none;
+}
+
+/*-----------------------------------------------------
+Header Banner Area Styles 
+-----------------------------------------------------*/
+
+.banner{
+    display: flex;
+    justify-content: space-between;
+}
+
+/*-----------------------------------------------------
+ Smaller Device Styles 
+ ----------------------------------------------------*/
+
+@media screen and (max-width: 576px) {
+
+    /*-------------------------------------------------
+    Header Area Styles 
+    -------------------------------------------------*/
+
+    .mid-large-device-header {
+        display: none;
+    }
+
+    .small-device-header {
+        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 35px 16px;
+
+    }
+
+    
+}
+
+
+/*-----------------------------------------------------
+ Medium Device Styles 
+ ----------------------------------------------------*/
+
+@media screen and (min-width: 577px) and (max-width: 768px) {
+
+    /*-------------------------------------------------
+    Header Area Styles 
+    -------------------------------------------------*/
+
+    .mid-large-device-header {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .header-title,
+    .menu {
+        text-align: center;
+    }
+
+    .header-title {
+        margin-bottom: 20px;
+    }
+}
